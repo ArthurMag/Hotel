@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5DC3BE3C-AE90-410C-8951-DFC0735A30EB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hotel</RootNamespace>
+    <AssemblyName>Hotel</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admins_Clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admins_Clients.Designer.cs">
+      <DependentUpon>Admins_Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admins_Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admins_Orders.Designer.cs">
+      <DependentUpon>Admins_Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admins_Settlement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admins_Settlement.Designer.cs">
+      <DependentUpon>Admins_Settlement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admins_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admins_Staff.Designer.cs">
+      <DependentUpon>Admins_Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Autentification_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Autentification_form.Designer.cs">
+      <DependentUpon>Autentification_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admins_Autentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admins_Autentification.Designer.cs">
+      <DependentUpon>Admins_Autentification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change_Your_Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change_Your_Data.Designer.cs">
+      <DependentUpon>Change_Your_Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entrance_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entrance_form.Designer.cs">
+      <DependentUpon>Entrance_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Get_A_Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Get_A_Room.Designer.cs">
+      <DependentUpon>Get_A_Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotelDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HotelDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Make_A_Request.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Make_A_Request.Designer.cs">
+      <DependentUpon>Make_A_Request.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration_form.Designer.cs">
+      <DependentUpon>Registration_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rooms_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rooms_admin.Designer.cs">
+      <DependentUpon>Rooms_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Secret_And_Cool_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Secret_And_Cool_Admin.Designer.cs">
+      <DependentUpon>Secret_And_Cool_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shedule_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shedule_admin.Designer.cs">
+      <DependentUpon>Shedule_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Special_services_admn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Special_services_admn.Designer.cs">
+      <DependentUpon>Special_services_admn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Your_Personal_Space.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Your_Personal_Space.Designer.cs">
+      <DependentUpon>Your_Personal_Space.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admins_Autentification.resx">
+      <DependentUpon>Admins_Autentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admins_Clients.resx">
+      <DependentUpon>Admins_Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admins_Orders.resx">
+      <DependentUpon>Admins_Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admins_Settlement.resx">
+      <DependentUpon>Admins_Settlement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admins_Staff.resx">
+      <DependentUpon>Admins_Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Autentification_form.resx">
+      <DependentUpon>Autentification_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change_Your_Data.resx">
+      <DependentUpon>Change_Your_Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entrance_form.resx">
+      <DependentUpon>Entrance_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Get_A_Room.resx">
+      <DependentUpon>Get_A_Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Make_A_Request.resx">
+      <DependentUpon>Make_A_Request.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Registration_form.resx">
+      <DependentUpon>Registration_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rooms_admin.resx">
+      <DependentUpon>Rooms_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Secret_And_Cool_Admin.resx">
+      <DependentUpon>Secret_And_Cool_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shedule_admin.resx">
+      <DependentUpon>Shedule_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Special_services_admn.resx">
+      <DependentUpon>Special_services_admn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Your_Personal_Space.resx">
+      <DependentUpon>Your_Personal_Space.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="HotelDataSet.xsc">
+      <DependentUpon>HotelDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HotelDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HotelDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HotelDataSet.xss">
+      <DependentUpon>HotelDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
